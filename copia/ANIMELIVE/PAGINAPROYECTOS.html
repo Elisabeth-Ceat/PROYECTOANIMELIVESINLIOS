@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustraciones Proyectos</title>
+    <style>
+        .lista {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .galeria:hover .lista {
+            display: block;
+        }
+
+        footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1px 1px;
+    z-index: 1000;
+    display: flex;
+}
+        .col-md-4{
+            background-color: rgba(0, 0, 0, 0.918);
+            color: white;
+        }
+
+        .chibi img{
+    animation: rotar 3s ease-in-out infinite;
+    position:relative;
+    position: fixed;         /* Se queda fijo aunque hagas scroll */
+    top: 600px;               /* Distancia desde la parte superior */
+    right: 20px;             /* Distancia desde la derecha */
+    width: 200px;            /* Tamaño del gif, ajústalo según necesites */
+    z-index: 9999;           /* Muy por encima de cualquier otro contenido */
+    pointer-events: none;    /* Para que no interfiera con clics debajo */
+}
+
+        body{
+            background-color: rgb(255, 0, 0);
+            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf8d0933-166d-40af-a2ce-9800bb90a9c6/dcbz0on-8f01c7a5-d899-4863-afaf-fc9b43c0fddd.jpg/v1/fill/w_875,h_913,q_70,strp/chibi_kida_dragon_character_by_kida_18reshiramshiny_dcbz0on-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2OCIsInBhdGgiOiJcL2ZcL2NmOGQwOTMzLTE2NmQtNDBhZi1hMmNlLTk4MDBiYjkwYTljNlwvZGNiejBvbi04ZjAxYzdhNS1kODk5LTQ4NjMtYWZhZi1mYzliNDNjMGZkZGQuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.nx4cVXelVi0_ky-7GeWPv-ERhzDQQ9PM5eWg3dzJM2A);
+            margin: 0;
+            padding-bottom: 60px;
+        }
+        main {
+            flex: 1;
+        }
+        .logo-con-sombra{
+            filter: drop-shadow(0 8px 6px rgba(255, 255, 255, 0.582));
+            animation: flotar 3s ease-in-out infinite;
+        }
+
+        @keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+        .col-md-3{
+            background-color: white;
+        }
+        .Alive{
+            color: #8ad1e3
+        }
+        .Bolder{
+            color: #8ad1e3
+        }
+        .imagen{
+            display: grid;
+
+        }
+        .imagen a :hover /*PENDIENTE*/
+
+        .imagen{
+            width: 10px;
+            height: 10px;
+        }
+        .fijo{
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .scroll-content {
+        height: 100vh;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+    .col-md-4 a img{
+        width: 100%;
+    }
+    .texto01{
+        padding: 7%;
+        color: white;
+        text-align: justify;
+    }
+
+    .texto02{
+        padding: 6%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .texto03{
+        padding: 6%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .texto04{
+        padding: 8%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .texto05{
+        padding: 8%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .texto06{
+        padding: 8%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .texto07{
+        padding: 8%;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .col-4{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .table{
+        display: block;
+        width: 800px;
+        height: 800px;
+    }
+    .table p{
+        background-color: #000000;
+        color: white;
+    }
+    .col-md-5{
+        width: 800px;
+        height: 800px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid fijo">
+        <div class="row">
+    
+            <!-- Menú lateral -->
+            <div class="col-md-4 border-end">
+                <div class="container py-3">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-8 text-center">
+                            <img src="../LOGO/SIN FONDO/logonuevo.png" class="img-fluid logo-con-sombra" alt="logo">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12 mb-2 fw-bold Alive"><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/INICIO.html">AnimeLive</a></div>
+                        <div class="col-12 mb-2 galeria position-relative fw-bold">
+                            <!-- 
+                            <ul class="lista">
+                                <li>Digital</li>
+                                <li>Tradicional</li>
+                                <li>Mixta</li>
+                                <li>Chibis</li>
+                                <li>Proyectos</li>
+                            </ul>-->
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary dropdown-toggle" style="color:#8ad1e3 ;  border: none !important;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Galería
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINADIGITAL.html">Digital</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINATRADICIONAL.html">Tradicional</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINAMIXTA.html">Mixta</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINACHIBIS.html">Chibis</a></li>
+                                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINAPROYECTOS.html">Proyectos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 fw-bold Bolder"><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINAFORMULARIO.html">Contacto</a></div>
+                        <div class="col-12 fw-bold Bolder"><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINANOVEDADESDEILUSTRACION.html">Ilustraciones Recientes</a></div>
+                        <div class="col-12 fw-bold Bolder"><a class="dropdown-item" href="http://127.0.0.1:5500/ANIMELIVE/PAGINANOVEDADESANIME.html">Novedades Anime de Temporada</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+            <table class="table">
+                <tr>
+                    <p>Ojo de Kandora</p>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <td><a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a></td>
+                    <!--poner mas imagenes luego-->
+                </tr>
+            </table>
+        </div>
+
+
+           <!-- <div class="col-md-5">
+                <div class="col-4">
+                    <a href="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:
+                    red" src="../PROYECTO/kidji_by_kida_18reshiramshiny_dg8858d-414w-2x.jpg" alt="imagen01"></a>
+                </div>
+                <div class="col-4">
+                    <a href="../PROYECTO/kidji_and_aron_by_kida_18reshiramshiny_dfnp8w9-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/kidji_and_aron_by_kida_18reshiramshiny_dfnp8w9-414w-2x.jpg" alt="imagen01"></a>
+                </div> <div class="col-4">
+                    <a href="../PROYECTO/nocchi_final_proyect_character_by_kida_18reshiramshiny_dfr7bf1-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/nocchi_final_proyect_character_by_kida_18reshiramshiny_dfr7bf1-414w-2x.jpg" alt="imagen01"></a>
+                </div>
+                <div class="col-4">
+                    <a href="../PROYECTO/rio_version_2_by_kida_18reshiramshiny_dgeqfem-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/rio_version_2_by_kida_18reshiramshiny_dgeqfem-414w-2x.jpg" alt="imagen01"></a>
+                </div>
+                <div class="col-4">
+                    <a href="../PROYECTO/nocchi_final_proyect_character_by_kida_18reshiramshiny_dfwwmof-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/nocchi_final_proyect_character_by_kida_18reshiramshiny_dfwwmof-414w-2x.jpg" alt="imagen01"></a>
+                </div>
+                <div class="col-4">
+                    <a href="../PROYECTO/rio_version_2_by_kida_18reshiramshiny_dgeqfem-414w-2x.jpg" onclick="openModal(this)"><img class="img-fluid imagen" style="border: 1px solid red; background:red" src="../PROYECTO/rio_version_2_by_kida_18reshiramshiny_dgeqfem-414w-2x.jpg" alt="imagen01"></a>
+                </div>
+        </div>
+        <div class="col-3" style="border:1px solid rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.685); border-radius: 10px;">
+            <div class="texto01"><p>Aqui poner cosas del proyecto. HACER ESTA SECCIÓN CON TABLAS</p></div>
+
+            <div class="texto02"><p> <strong>El reinado de Clevatess</strong> uno de los Señores de las Bestias Mágicas, se desmorona al revivir a un héroe al que él mismo mató y adoptar a un bebé humanoide huérfano: la última esperanza para salvar un mundo moribundo. Ahora unidos, ¿qué destino les espera a este improbable trío?.</p></div>
+
+            <div class="texto03"><p> <strong>My Dress-up Darling</strong>, título internacional para la adaptación al anime del manga Sexy Cosplay Doll, fue una de las sorpresas que dejó el 2022 en cuanto a series populares. Dicho anime cuenta por el momento con una primera temporada de doce episodios, emitidos en la televisión japonesa entre enero y marzo de 2022. La serie se pudo seguir fuera de Japón a través de Crunchyroll, servicio donde se encuentra actualmente disponible.</p></div>
+
+            <div class="texto04"><p>Un alienígena feliz, <strong>Takopi</strong>, aterriza en la Tierra con una misión: ¡propagar la felicidad! Cuando conoce a Shizuka, una chica solitaria de cuarto curso, promete devolverle la sonrisa usando sus Artefactos de Felicidad mágicos. Pero mientras descubre el dolor que hay en su vida, Takopi aprende que para ser feliz quizás necesites algo más que artilugios.</p></div>
+
+            <div class="texto05"><p>La historia sigue a un joven cielo llamado <strong>Rudo</strong> que, después de ser condenado falsamente por asesinato, es expulsado del cielo al abismo. Allí, conoce a un conserje cercano llamado Engine, quien lo rescata de una horda de bestias. Así comienza la travesía de Rudo en búsqueda de una forma para regresar al cielo y encontrar al verdadero culpable del asesinato para vengarse.</p></div>
+
+        </div>
+        
+        
+
+        </div>-->
+        </div>
+        <div class="chibi">
+            <img src="../PROYECTO/chibis sin fondos y gif/gif/picasion.com_eb9423eaa7c35f1fb22dc929ed29869e.gif" class="chibi-img ms-2" alt="Chibi animado">
+            </div>
+        </div>
+        <div id="imageModal" class="modal-custom">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImagen">
+        </div>
+    </div>
+
+    <script>
+        function openModal(element) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImagen");
+            const imgSrc = element.querySelector("img").getAttribute("data-src");
+        
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+        
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+        </script>
+
+
+
+
+<!--a partir de aqui la galeria de imagenes digitales. ESTA MISMA PAGINA PARA LAS DEMAS DE TRADICIONAL, MIXTA, CHIBIS Y PROYECTOS-->
+
+
+
+    
+
+<footer>
+    <p>© 2025 AnimeLive</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 20px;height:20px"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128l95.1 0 11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128l58.2 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-68.9 0L325.8 320l58.2 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-68.9 0-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7-95.1 0-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384 32 384c-17.7 0-32-14.3-32-32s14.3-32 32-32l68.9 0 21.3-128L64 192c-17.7 0-32-14.3-32-32s14.3-32 32-32l68.9 0 11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320l95.1 0 21.3-128-95.1 0z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px;height:20px"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+</footer>
+    
+</body>
+</html>
